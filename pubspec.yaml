@@ -1,10 +1,9 @@
 name: secure_screen_plugin
 description: A Flutter plugin that provides secure screen functionality to prevent screenshots and screen recording on Android and iOS platforms.
 version: 0.1.0+1
-publish_to: https://pub.dev
-homepage: https://github.com/YOUR_USERNAME/secure_screen_plugin
-repository: https://github.com/YOUR_USERNAME/secure_screen_plugin
-issue_tracker: https://github.com/YOUR_USERNAME/secure_screen_plugin/issues
+homepage: https://github.com/YangLi-dev/secure_screen_plugin
+repository: https://github.com/YangLi-dev/secure_screen_plugin
+issue_tracker: https://github.com/YangLi-dev/secure_screen_plugin/issues
 
 environment:
   sdk: ^3.9.0
@@ -21,12 +20,9 @@ flutter:
 dependencies:
   flutter:
     sdk: flutter
-  secure_screen_plugin_android:
-    path: ../secure_screen_plugin_android
-  secure_screen_plugin_ios:
-    path: ../secure_screen_plugin_ios
-  secure_screen_plugin_platform_interface:
-    path: ../secure_screen_plugin_platform_interface
+  secure_screen_plugin_android: ^0.1.0 # 改为版本依赖
+  secure_screen_plugin_ios: ^0.1.0 # 改为版本依赖
+  secure_screen_plugin_platform_interface: ^0.1.0
 
 dev_dependencies:
   flutter_test:
