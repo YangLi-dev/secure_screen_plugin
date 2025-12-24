@@ -57,9 +57,34 @@ To allow screenshots and screen recording again:
 await disableSecureScreen();
 ```
 
-### Example
+### Listen to screenshot events (iOS only)
+
+To detect when a screenshot is taken on iOS:
 
 ```dart
+import 'dart:async';
+import 'package:secure_screen_plugin/secure_screen_plugin.dart';
+
+// Listen to screenshot events
+StreamSubscription<String>? _screenshotSubscription;
+
+void startListening() {
+  _screenshotSubscription = onScreenshot().listen((event) {
+    print('Screenshot detected: $event');
+    // Handle screenshot event
+  });
+}
+
+void stopListening() {
+  _screenshotSubscription?.cancel();
+  _screenshotSubscription = null;
+}
+```
+
+### Complete Example
+
+```dart
+import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:secure_screen_plugin/secure_screen_plugin.dart';
 
@@ -76,6 +101,24 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   bool _isSecure = false;
+  StreamSubscription<String>? _screenshotSubscription;
+
+  @override
+  void initState() {
+    super.initState();
+    // Start listening to screenshot events (iOS only)
+    _screenshotSubscription = onScreenshot().listen((event) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('Screenshot detected!')),
+      );
+    });
+  }
+
+  @override
+  void dispose() {
+    _screenshotSubscription?.cancel();
+    super.dispose();
+  }
 
   Future<void> _toggleSecureScreen() async {
     if (_isSecure) {

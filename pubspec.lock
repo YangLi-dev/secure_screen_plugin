@@ -134,26 +134,23 @@ packages:
   secure_screen_plugin_android:
     dependency: "direct main"
     description:
-      name: secure_screen_plugin_android
-      sha256: "98853a376e19f9b6794be01aa42d8b1d138e34409c1a45baaab7c7efab29474d"
-      url: "https://pub.dev"
-    source: hosted
+      path: "../secure_screen_plugin_android"
+      relative: true
+    source: path
     version: "0.1.0+1"
   secure_screen_plugin_ios:
     dependency: "direct main"
     description:
-      name: secure_screen_plugin_ios
-      sha256: c410b774499609dac19661e1eeeb4074ea9fcfc7f963f0528050d87939b86cc6
-      url: "https://pub.dev"
-    source: hosted
+      path: "../secure_screen_plugin_ios"
+      relative: true
+    source: path
     version: "0.1.0+1"
   secure_screen_plugin_platform_interface:
     dependency: "direct main"
     description:
-      name: secure_screen_plugin_platform_interface
-      sha256: e2928b60512e378859de5e1bb05b09d7ea962edef3d85cdf6a2b9ad8baac92e0
-      url: "https://pub.dev"
-    source: hosted
+      path: "../secure_screen_plugin_platform_interface"
+      relative: true
+    source: path
     version: "0.1.0+1"
   sky_engine:
     dependency: transitive

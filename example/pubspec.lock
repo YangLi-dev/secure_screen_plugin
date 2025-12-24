@@ -72,11 +72,6 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-  flutter_web_plugins:
-    dependency: transitive
-    description: flutter
-    source: sdk
-    version: "0.0.0"
   fuchsia_remote_debug_protocol:
     dependency: transitive
     description: flutter
@@ -188,38 +183,10 @@ packages:
       relative: true
     source: path
     version: "0.1.0+1"
-  secure_screen_plugin_linux:
-    dependency: transitive
-    description:
-      path: "../../secure_screen_plugin_linux"
-      relative: true
-    source: path
-    version: "0.1.0+1"
-  secure_screen_plugin_macos:
-    dependency: transitive
-    description:
-      path: "../../secure_screen_plugin_macos"
-      relative: true
-    source: path
-    version: "0.1.0+1"
   secure_screen_plugin_platform_interface:
     dependency: transitive
     description:
       path: "../../secure_screen_plugin_platform_interface"
-      relative: true
-    source: path
-    version: "0.1.0+1"
-  secure_screen_plugin_web:
-    dependency: transitive
-    description:
-      path: "../../secure_screen_plugin_web"
-      relative: true
-    source: path
-    version: "0.1.0+1"
-  secure_screen_plugin_windows:
-    dependency: transitive
-    description:
-      path: "../../secure_screen_plugin_windows"
       relative: true
     source: path
     version: "0.1.0+1"

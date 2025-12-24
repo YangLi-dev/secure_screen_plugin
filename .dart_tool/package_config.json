@@ -105,19 +105,19 @@
     },
     {
       "name": "secure_screen_plugin_android",
-      "rootUri": "file:///Users/jack/.pub-cache/hosted/pub.dev/secure_screen_plugin_android-0.1.0+1",
+      "rootUri": "../../secure_screen_plugin_android",
       "packageUri": "lib/",
       "languageVersion": "3.9"
     },
     {
       "name": "secure_screen_plugin_ios",
-      "rootUri": "file:///Users/jack/.pub-cache/hosted/pub.dev/secure_screen_plugin_ios-0.1.0+1",
+      "rootUri": "../../secure_screen_plugin_ios",
       "packageUri": "lib/",
       "languageVersion": "3.9"
     },
     {
       "name": "secure_screen_plugin_platform_interface",
-      "rootUri": "file:///Users/jack/.pub-cache/hosted/pub.dev/secure_screen_plugin_platform_interface-0.1.0+1",
+      "rootUri": "../../secure_screen_plugin_platform_interface",
       "packageUri": "lib/",
       "languageVersion": "3.9"
     },

@@ -18,3 +18,18 @@ Future<void> enableSecureScreen() async {
 Future<void> disableSecureScreen() async {
   await _platform.disable();
 }
+
+/// Listens to screenshot events.
+///
+/// Returns a stream that emits events when a screenshot is detected.
+/// On iOS, this will emit "screenshot_detected" when a screenshot is taken.
+///
+/// Example:
+/// ```dart
+/// secure_screen_plugin.onScreenshot().listen((event) {
+///   print('Screenshot detected: $event');
+/// });
+/// ```
+Stream<String> onScreenshot() {
+  return _platform.onScreenshot();
+}
